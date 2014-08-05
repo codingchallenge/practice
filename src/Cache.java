@@ -38,7 +38,7 @@ public class Cache<K,V> {
 	}
 	
 
-	public synchronized void put(K key, V value ) {
+	public void put(K key, V value ) {
 		if(hash.containsKey(key)) {
 			Node n = hash.get(key);
 			queue.remove(n);
